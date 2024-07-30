@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletShot : MonoBehaviour
 {
-    public Rigidbody bullet;
+    public GameObject bullet;
 
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,12 @@ public class BulletShot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(bullet);
+            Debug.Log("Mouse Clicked.");
+
+            GameObject bulletInstance = Instantiate(bullet, this.transform.position, Quaternion.identity);
+            Destroy(bulletInstance, 2f);
         }
     }
 }
