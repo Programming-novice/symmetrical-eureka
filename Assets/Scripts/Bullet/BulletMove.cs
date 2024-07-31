@@ -14,6 +14,7 @@ public class BulletMove : MonoBehaviour
         float angle = Vector2.SignedAngle(Vector2.right, direction);
 
         transform.eulerAngles = new Vector3(0, 0, angle);
+
     }
 
     // Update is called once per frame

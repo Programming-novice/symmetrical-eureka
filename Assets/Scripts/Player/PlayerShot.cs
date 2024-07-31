@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BulletShot : MonoBehaviour
 {
     public GameObject bullet;
@@ -17,10 +18,11 @@ public class BulletShot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("Mouse Clicked.");
 
             GameObject bulletInstance = Instantiate(bullet, this.transform.position, Quaternion.identity);
+
             Destroy(bulletInstance, 2f);
+            
         }
     }
 }
