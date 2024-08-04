@@ -162,4 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  health: 0
+  maxHealth: 0
+  animCon:
+  - {fileID: 0}
+  - {fileID: 0}
   target: {fileID: 0}
